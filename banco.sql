@@ -29,11 +29,16 @@ INSERT INTO livros (titulo, descricao, ano_lancamento) VALUES
 
 
 -- a
-SELECT titulo, ano_lancamento FROM livros;
+SELECT titulo, ano_lancamento FROM livros ORDER BY titulo ASC, ano_lancamento DESC;
 -- I
-SELECT * FROM livros ORDER BY titulo ASC;
+SELECT titulo FROM livros WHERE titulo LIKE '%c%' ORDER BY titulo ASC;
+
+UPDATE livros SET ano_lancamento  = 2023 WHERE TITULO LIKE '%'
 --II
 SELECT titulo,ano_lancamento FROM livros WHERE ano_lancamento ORDER BY ano_lancamento DESC;
+
+
+SELECT * FROM livros
 
 
 
